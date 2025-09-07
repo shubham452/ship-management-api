@@ -1,19 +1,19 @@
 const mongoose = require("mongoose");
 
-const shipModel = new mongoose.Schema(
+const shipSchema = new mongoose.Schema(
     {
-        name:
-        {
-            type:String,
-            required: true
-        },
-        email:
-        {
-            type:String,
-            required:true,
-            match: [/^\S+@\S+\.\S+$/, "Please enter a valid email"],
-        },
-    },{timestamps:true}
+        imoNumber: { type: String, required: true, unique: true },
+        name: { type: String, required: true },
+        type: { type: String, required: true },
+        flag: { type: String, required: true },
+        yearBuilt: { type: Number },
+        grossTonnage: { type: Number },
+        deadweight: { type: Number },
+        capacityTEU: { type: Number },
+        passengerCapacity: { type: Number },
+    },
+    { timestamps: true }
 );
 
-module.exports= shipModel;
+
+module.exports = mongoose.model("Ship", shipSchema);

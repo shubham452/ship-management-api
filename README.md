@@ -85,8 +85,8 @@ The API will start on:
 ```json
 {
   "username": "shubham",
-  "email": "shubham@example.com",
-  "password": "123456"
+  "email": "shubham@gmail.com",
+  "password": "shubham"
 }
 ```
 
@@ -96,8 +96,8 @@ The API will start on:
 
 ```json
 {
-  "email": "shubham@example.com",
-  "password": "123456"
+  "email": "shubham@gmail.com",
+  "password": "shubham"
 }
 ```
 

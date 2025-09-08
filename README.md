@@ -224,4 +224,3 @@ ship-management-api/
 
 ---
 
-Shubham, do you want me to also **write the Postman collection `.json` file for you** (with all 7 endpoints already set up), so you can just attach it with this README for submission?
